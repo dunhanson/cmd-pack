@@ -1,0 +1,9 @@
+basic:
+  project:
+    name: bxkc
+    source: "E:\\Programming\\Code\\Company\\bxkc-pc"
+    output: "D:\\Test\\bxkc"
+  git:
+    author: dunhanson
+    after: "2020-04-01 00:00:00"
+    before: "2020-04-18 00:00:00"
