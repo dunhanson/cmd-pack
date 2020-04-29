@@ -31,6 +31,8 @@ public class YamlUtils {
             Yaml yaml = new Yaml();
             String localPath = YamlUtils.class.getProtectionDomain().getCodeSource().getLocation().getPath();
             localPath = localPath.substring(1);
+            localPath = localPath.substring(0, localPath.lastIndexOf("/") + 1);
+            log.info("localPath : " + localPath);
             File localFile = new File(localPath + path);
             if(localFile.exists()) {
                 try(InputStream inputStream = new FileInputStream(localFile)) {
