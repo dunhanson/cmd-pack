@@ -41,3 +41,15 @@ git:
 * author 作者
 * after 开始时间 默认当前时间，但是零时、零分、零秒（XXXX-XX-XX 00:00:00）
 * before 结束时间 默认当前时间
+
+
+
+## JAR文件
+
+[cmd_pack_jar.zip](http://bxkc.oss-cn-shanghai.aliyuncs.com/software/cmd_pack_jar.zip)
+
+文件清单：
+
+* cmd-pack.bat
+* cmd-pack.jar
+* cmd-pack.yaml
