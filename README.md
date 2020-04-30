@@ -32,15 +32,15 @@ basic:
 
 project:
 
-* name 项目名称，pom.xml中配置的artifactId
-* source 项目路径 ，Git Maven项目路径
-* output 输出路径，打包后输出的路径，会生成目录和压缩包
+* name 项目名称 必填 pom.xml中配置的artifactId
+* source 项目路径 必填 Git Maven项目路径
+* output 输出路径 必填 打包后输出的路径，会生成目录和压缩包
 
 git:
 
-* author 作者
-* after 开始时间 默认当前时间，但是零时、零分、零秒（XXXX-XX-XX 00:00:00）
-* before 结束时间 默认当前时间
+* author 作者 可选
+* after 开始时间 可选 默认当前时间，但是零时、零分、零秒（XXXX-XX-XX 00:00:00）
+* before 结束时间 可选 默认当前时间
 
 
 
