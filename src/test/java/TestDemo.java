@@ -9,6 +9,7 @@ import site.dunhanson.cmd.pack.utils.YamlUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class TestDemo {
     @Test
@@ -30,7 +31,7 @@ public class TestDemo {
 
     @Test
     public void test2() {
-        String path = "/D:/Test/cmd-pack/target/classes/";
-        System.out.println(path.substring(1));
+        Map<String, Object> map = YamlUtils.loadFile("cmd-pack.yaml");
+        System.out.println(map);
     }
 }
