@@ -24,8 +24,8 @@ basic:
     output: D:\Test\bxkc
   git:
     author: dunhanson
-    after: 2020-04-29 00:00:00
-    before: 2020-04-30 00:00:00
+    after: '2020-04-29 00:00:00'
+    before: '2020-04-30 00:00:00'
 ```
 
 说明：
