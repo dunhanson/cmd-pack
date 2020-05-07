@@ -56,7 +56,8 @@ git:
 
 ## 待完善功能
 
-* 多项目支持，并添加start:true/false字段 ``已完成``
+* 多项目支持，并添加start:true/false字段 ``2020.05.07已完成``
+* 自动读取pom.xml文件中的build->finalName
 
 
 
