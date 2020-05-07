@@ -48,6 +48,12 @@ git:
 
 
 
+## 待完善功能
+
+* 多项目支持，并添加start:true/false字段
+
+
+
 ## JAR文件
 
 [cmd_pack_jar.zip](http://bxkc.oss-cn-shanghai.aliyuncs.com/software/cmd_pack_jar.zip)
