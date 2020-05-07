@@ -54,6 +54,12 @@ git:
 
 
 
+## 问题说明
+
+禁止路径中包含空格
+
+
+
 ## JAR文件
 
 [cmd_pack_jar.zip](http://bxkc.oss-cn-shanghai.aliyuncs.com/software/cmd_pack_jar.zip)
