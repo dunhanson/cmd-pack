@@ -10,6 +10,7 @@ import lombok.Data;
 @Data
 public class Project {
     private String name;
+    private Boolean start;
     private String source;
     private String output;
 }

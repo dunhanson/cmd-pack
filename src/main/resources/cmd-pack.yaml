@@ -1,9 +1,14 @@
 basic:
-  project:
-    name: bxkc_api
-    source: D:\Document\Company\code\bxkc-api
-    output: D:\Test\bxkc-api
+  projects:
+    - name: bxkc
+      start: false
+      source: D:\Document\Company\code\bxkc-pc
+      output: D:\Test\bxkc\bxkc-pc
+    - name: bxkc
+      start: true
+      source: D:\Document\Company\code\bxkc-api
+      output: D:\Test\bxkc\bxkc-api
   git:
     author: dunhanson
-    #after: '2020-04-29 00:00:00'
-    #before: '2020-04-30 00:00:00'
+    after: '2020-05-01 00:00:00'
+    before: '2020-05-08 00:00:00'

@@ -6,6 +6,7 @@ import net.lingala.zip4j.exception.ZipException;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import site.dunhanson.cmd.pack.entity.Basic;
+import site.dunhanson.cmd.pack.entity.Git;
 import site.dunhanson.cmd.pack.entity.Project;
 import java.io.File;
 import java.io.IOException;
@@ -24,8 +25,22 @@ public class PackUtils {
      */
     public static void doing() {
         Basic basic = YamlUtils.getEntity(Basic.class, "cmd-pack.yaml", "basic");
-        //项目
-        Project project = basic.getProject();
+        List<Project> projects = basic.getProjects();
+        projects.forEach(project->{
+            if(project.getStart()) {
+                log.info("project->" + project.getName());
+                project(project, basic.getGit());
+            }
+        });
+        log.info("package finish...");
+    }
+
+    /**
+     * project
+     * @param project
+     * @param git
+     */
+    public static void project(Project project, Git git) {
         //项目路径
         String source = project.getSource();
         if(StringUtils.isBlank(source)) {
@@ -44,12 +59,10 @@ public class PackUtils {
             log.error("project->output is null");
             return;
         }
-
         //清空&删除
         FileUtils.deleteQuietly(new File(output + "/" + project));
-
         //git文件路径
-        Set<String> set = GitUtils.listLogPath(source, basic.getGit());
+        Set<String> set = GitUtils.listLogPath(source, git);
         set = getRealPath(set, source, name);
         if(!set.isEmpty()) {
             set.forEach(realPath->{
@@ -66,7 +79,6 @@ public class PackUtils {
                 log.error("zip error " + e.getMessage());
             }
         }
-        log.info("package finish...");
     }
 
     /**

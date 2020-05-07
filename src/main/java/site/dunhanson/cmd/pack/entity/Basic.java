@@ -2,6 +2,8 @@ package site.dunhanson.cmd.pack.entity;
 
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * 配置信息
  * @author dunhanson
@@ -9,6 +11,6 @@ import lombok.Data;
  */
 @Data
 public class Basic {
-    private Project project;
+    private List<Project> projects;
     private Git git;
 }

@@ -1,37 +1,18 @@
-import org.apache.commons.lang3.StringUtils;
+
 import org.junit.Test;
 import site.dunhanson.cmd.pack.entity.Basic;
-import site.dunhanson.cmd.pack.entity.Git;
-import site.dunhanson.cmd.pack.entity.Project;
-import site.dunhanson.cmd.pack.utils.CmdUtils;
-import site.dunhanson.cmd.pack.utils.GitUtils;
+import site.dunhanson.cmd.pack.utils.PackUtils;
 import site.dunhanson.cmd.pack.utils.YamlUtils;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class TestDemo {
     @Test
-    public void test() {
+    public void yaml() {
         Basic basic = YamlUtils.getEntity(Basic.class, "cmd-pack.yaml", "basic");
-
-        Git git = basic.getGit();
-        //git命令
-        String gitCommand = GitUtils.getCommand(git);
-        //cmd命令
-        List<String> commandBuilder = new ArrayList();
-        commandBuilder.add("cmd.exe /c cd " + " && cd E:\\Programming\\Code\\Company\\bxkc-pc");
-        commandBuilder.add(gitCommand);
-        String command = StringUtils.join(commandBuilder, " & ");
-        //执行cmd
-        String result = CmdUtils.execGetResult(command);
-        System.out.println(result);
+        System.out.println(basic);
     }
 
     @Test
-    public void test2() {
-        Map<String, Object> map = YamlUtils.loadFile("cmd-pack.yaml");
-        System.out.println(map);
+    public void start() {
+        PackUtils.doing();
     }
 }
