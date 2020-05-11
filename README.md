@@ -58,6 +58,7 @@ git:
 
 * 多项目支持，并添加start:true/false字段 ``2020.05.07已完成``
 * 自动读取pom.xml文件中的build->finalName
+* git添加最近时段筛选项，分钟、小时、天选项
 
 
 
