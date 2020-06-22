@@ -42,7 +42,7 @@ public class GitUtils {
         }
         if(!set.isEmpty()) {
             set = set.stream().filter(
-                    str->str.startsWith("src/main/java") || str.startsWith("src/main/webapp/")
+                    str->str.startsWith("src/main/java") || str.startsWith("src/main/resources") || str.startsWith("src/main/webapp/")
             ).collect(Collectors.toSet());
         }
         return set;

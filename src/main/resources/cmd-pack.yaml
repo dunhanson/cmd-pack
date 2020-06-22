@@ -1,14 +1,18 @@
 basic:
   projects:
     - name: bxkc
-      start: false
-      source: D:\Document\Company\code\bxkc-pc
-      output: D:\Test\bxkc\bxkc-pc
-    - name: bxkc
       start: true
-      source: D:\Document\Company\code\bxkc-api
-      output: D:\Test\bxkc\bxkc-api
+      source: D:\Document\Code\company\bxkc-pc
+      output: D:\Test\cmd_pack_jar\bxkc\bxkc-pc
+    - name: bxkc
+      start: false
+      source: D:\Document\Code\company\bxkc-api
+      output: D:\Test\cmd_pack_jar\bxkc\bxkc-api
+    - name: bxkc
+      start: false
+      source: D:\Document\Code\company\bxkc-scheduler
+      output: D:\Test\cmd_pack_jar\bxkc\bxkc-scheduler
   git:
     author: dunhanson
-    after: '2020-05-01 00:00:00'
-    before: '2020-05-08 00:00:00'
+    # after: '2020-05-15 00:00:00'
+    # before: '2020-05-16 00:00:00'
