@@ -70,7 +70,8 @@ git:
 
 ## JAR文件
 
-[cmd_pack_jar.zip](http://bxkc.oss-cn-shanghai.aliyuncs.com/software/cmd_pack_jar.zip)
+链接：https://pan.baidu.com/s/1XR6LUshq2OliSuTK4MJvcA 
+提取码：zcyp 
 
 文件清单：
 
